@@ -1,0 +1,10 @@
+
+services:
+  game-server:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: game_server
+    ports:
+      - "8080:8080"
+    restart: always
