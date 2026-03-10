@@ -17,7 +17,7 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        docker build -t game-server ./docker
+        docker build -t game-server -f docker/Dockerfile .
 
     - name: Run Container
       run: |
